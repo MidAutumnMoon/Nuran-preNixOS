@@ -1,0 +1,17 @@
+/* MidAutumnMoon's userChrome.css */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* This time, search with peace. */
+#urlbar .search-one-offs:not([hidden]) {
+  display: none !important;
+}
+
+/* Only display close button on hover */
+.tabbrowser-tab .tab-close-button {
+  display: none !important;
+}
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+  display: inherit !important;
+}
+
