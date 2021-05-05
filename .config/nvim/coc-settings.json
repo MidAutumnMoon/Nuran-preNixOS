@@ -1,0 +1,20 @@
+{
+  "http.proxy": "http://127.0.0.1:8889",
+
+  "coc.preferences.diagnostic.displayByAle": true,
+
+  "markdownlint.config": {
+    "line_length": false
+  },
+
+  "pairs.disableLanguages": [ "scheme" ],
+
+  "languageserver": {
+    "zls": {
+      "command": "zls",
+      "filetypes": [ "zig" ]
+    }
+  }
+}
+
+// vim: set ft=jsonc:

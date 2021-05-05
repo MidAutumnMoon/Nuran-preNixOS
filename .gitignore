@@ -1,0 +1,15 @@
+*
+
+!.gitignore
+
+!/.config/
+!/.local/
+
+!/.mozilla/
+!/.snow/
+
+!/.makepkg.conf
+!/.pam_environment
+!/.taskrc
+!/.xprofile
+

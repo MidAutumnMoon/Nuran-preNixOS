@@ -1,0 +1,6 @@
+#+title: README.org
+#+author: MidAutumnMoon
+
+* MidAutumnMoon's Emacs Configuration
+
+* TODO Do something.

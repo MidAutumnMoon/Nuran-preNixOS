@@ -1,0 +1,10 @@
+--theme="Material-Theme-Palenight"
+
+--style="numbers"
+
+--italic-text=always
+
+--terminal-width=140
+
+--map-syntax '.ignore:Git Ignore'
+

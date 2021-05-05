@@ -1,0 +1,74 @@
+# add_newline  = false
+scan_timeout = 10
+
+format = """
+${custom.vimrc}${custom.nixos}${custom.chez}$nix_shell$username$directory$git_branch$git_commit$git_state$git_status$cmd_duration
+$jobs$character"""
+
+[character]
+success_symbol = '[](bold blue)'
+error_symbol = "[x](bold red) "
+
+[cmd_duration]
+min_time = 4000
+format   = '[$duration]($style)'
+style    = "bold yellow"
+
+[username]
+format = '[\[](bright-green)[$user]($style) [of](white) '
+
+[directory]
+truncation_length = 7
+style           = 'bold fg:#66ccff'
+read_only       = ' (RO)'
+read_only_style = 'bold fg:bright-yellow'
+
+[directory.substitutions]
+"~/Music"       = "Music 🎶"
+"~/Video"       = "Video 📀"
+"~/Picture"     = "Picture 🎴"
+"~/Document"    = "Document 📃"
+"~/Download"    = "Download 💾"
+"~/Film"        = "Film 🎥"
+"~/Playground"  = "Playground"
+"~/Develop"     = "Develop"
+"~/Project"     = "Project"
+"~/.config"     = ".config"
+"~/.local"      = ".local"
+
+"/run/media/zgc/S" = "S"
+
+[git_branch]
+symbol = " "
+
+[git_status]
+deleted = "x"
+
+[nix_shell]
+format = "[$symbol\\($state\\) ]($style)"
+symbol = "❄️"
+
+[jobs]
+format    = '[$symbol $number]($style) '
+# threshold = 0
+symbol    = ''
+
+[custom.chez]
+format = "[Chez ]($style)"
+when   = """ if [ -z ${CHEZ_ENV+x} ]; then false; else true; fi """
+shell  = [ 'sh', '--norc', '--noprofile', '--noediting', '--init-file', '/dev/null' ]
+
+[custom.guix_env]
+format   = "[Guix ]($style)"
+when     = """ if [ -z ${GUIX_ENVIRONMENT+x} ]; then false; else true; fi """
+shell    = [ 'sh', '--norc', '--noprofile', '--noediting', '--init-file', '/dev/null' ]
+disabled = true
+
+[custom.nixos]
+format = "[Nix ]($style)"
+when   = """ if [ -d "/nix" ]; then true; else false; fi """
+shell  = [ 'sh', '--norc', '--noprofile', '--noediting', '--init-file', '/dev/null' ]
+
+[custom.vimrc]
+format = "[Vimrc ]($style)"
+files  = [ '.nvimrc', 'vimrc', 'exrc' ]
