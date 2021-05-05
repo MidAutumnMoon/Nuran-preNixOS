@@ -32,21 +32,12 @@ augroup nerdtree_auto
         \ | if argc() == 1 && isdirectory(argv()[0]) && !exists( "s:std_in" )
         \ |   enew
         \ |   exec 'cd ' . argv()[0]
-        \ |   exec 'NERDTreeClose'
         \ | elseif argc() == 0 && !exists( "s:std_in" )
         \ |   enew
         \ |   exec 'cd ' . $PWD
-        \ |   exec 'NERDTreeClose'
         \ | endif
+        \ | exec 'NERDTreeClose'
         \ | wincmd w
-
-  " autocmd BufEnter * silent!
-  "       \   if exists( 't:NERDTreeBufName' ) && bufwinnr( t:NERDTreeBufName ) != -1
-  "       \ |   if &modifiable && strlen( expand('%') ) > 0 && !&diff && ! &ft ==# 'nerdtree'
-  "       \ |     exec 'NERDTreeFind'
-  "       \ |     wincmd p
-  "       \ |   endif
-  "       \ | endif
 
   autocmd BufEnter * silent!
         \ | if winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()

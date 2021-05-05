@@ -1,3 +1,7 @@
+if ! has( 'gui_running' )
+  finish
+endif
+
 set guifont=JetbrainsMono\ Nerd\ Font:h18
 
 " Neovide config
