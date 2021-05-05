@@ -7,5 +7,5 @@
 
 ---
 
-* [Nuran the Dotfiles](https://gitlab.com/MidAutumnMoon/dotfiles)
+* [Nuran the my Dotfiles](https://gitlab.com/MidAutumnMoon/dotfiles)
 
