@@ -8,6 +8,7 @@
 
 !/.mozilla/
 !/.snow/
+!/.ssh/
 
 !/.makepkg.conf
 !/.pam_environment
