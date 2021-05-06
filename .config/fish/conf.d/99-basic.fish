@@ -14,8 +14,9 @@ if status is-interactive
     rbenv init - | source
   end
 
-  direnv hook fish | source
-  starship init fish | source
+  command direnv hook fish | source
+  command starship init fish | source
+  command zoxide init fish | source
 
   set -xg pcmn_pacman_command pikaur
 end
