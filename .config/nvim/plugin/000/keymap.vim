@@ -1,6 +1,6 @@
 " free movement
-nnoremap j gj
-nnoremap k gk
+nmap j gj
+nmap k gk
 
 " add new line
 nnoremap <Leader>o o<ESC>
@@ -14,6 +14,8 @@ nnoremap <Leader>A ggVG
 
 " jump to end of line with one stroke
 nmap \ $
+omap \ $
+xmap \ $
 
 " , is easier to press
 nmap , %
@@ -71,6 +73,7 @@ nnoremap Y y$
 
 " quit insert mode in a easy way
 imap jk <Esc>
+cmap jk <Esc>
 
 " <tab> to cycle through all splits, with nerdtree ignored
 nnoremap <silent><Tab> <C-w>w<Bar>:if &ft ==# 'nerdtree'<Bar>wincmd w<Bar>endif<CR>
@@ -78,4 +81,6 @@ nnoremap <silent><S-Tab> <C-w>W<Bar>:if &ft ==# 'nerdtree'<Bar>wincmd W<Bar>endi
 
 " Open help in new tab
 cabbrev h tab help
+
+omap t it
 
