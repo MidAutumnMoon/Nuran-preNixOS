@@ -9,7 +9,8 @@ set modelines=3
 set mouse=a
 set nospell
 set shell=bash
-set timeoutlen=500
+set timeoutlen=350
+set undofile
 set updatetime=180
 set visualbell
 set wrap

@@ -24,5 +24,5 @@ function! s:todo() abort
 endfunction
 
 command! Todo call s:todo()
-nnoremap <leader>to :Todo<CR>
+nnoremap <leader>do :Todo<CR>
 
