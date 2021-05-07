@@ -15,3 +15,9 @@
   display: inherit !important;
 }
 
+.tabbrowser-tab {
+  min-width: initial !important;
+}
+.tab-content {
+  overflow: hidden !important;
+}
