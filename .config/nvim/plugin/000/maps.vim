@@ -21,8 +21,8 @@ xmap \ $
 nmap , %
 
 " switch buffers
-nnoremap <silent>]b :bnext<CR>
-nnoremap <silent>[b :bprev<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [b :bprev<CR>
 
 " switch tabs
 nnoremap <silent> ]q :tabn<CR>
@@ -44,14 +44,14 @@ cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
 
 " move lines in different modes
-nnoremap <silent><C-k> :move-2<CR>
-nnoremap <silent><C-j> :move+<CR>
-nnoremap <silent><C-h> <<
-nnoremap <silent><C-l> >>
-xnoremap <silent><C-k> :move-2<CR>gv
-xnoremap <silent><C-j> :move'>+<CR>gv
-xnoremap <silent><C-h> <gv
-xnoremap <silent><C-l> >gv
+nnoremap <silent> <C-k> :move-2<CR>
+nnoremap <silent> <C-j> :move+<CR>
+nnoremap <silent> <C-h> <<
+nnoremap <silent> <C-l> >>
+xnoremap <silent> <C-k> :move-2<CR>gv
+xnoremap <silent> <C-j> :move'>+<CR>gv
+xnoremap <silent> <C-h> <gv
+xnoremap <silent> <C-l> >gv
 xnoremap < <gv
 xnoremap > >gv
 
@@ -76,8 +76,8 @@ imap jk <Esc>
 cmap jk <Esc>
 
 " <tab> to cycle through all splits, with nerdtree ignored
-nnoremap <silent><Tab> <C-w>w<Bar>:if &ft ==# 'nerdtree'<Bar>wincmd w<Bar>endif<CR>
-nnoremap <silent><S-Tab> <C-w>W<Bar>:if &ft ==# 'nerdtree'<Bar>wincmd W<Bar>endif<CR>
+nnoremap <silent> <Tab> <C-w>w<Bar>:if &ft ==# 'nerdtree'<Bar>wincmd w<Bar>endif<CR>
+nnoremap <silent> <S-Tab> <C-w>W<Bar>:if &ft ==# 'nerdtree'<Bar>wincmd W<Bar>endif<CR>
 
 " Open help in new tab
 " cabbrev H tab help

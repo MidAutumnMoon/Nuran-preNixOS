@@ -6,8 +6,8 @@ let g:rooter_change_directory_for_non_project_files = 'current'
 let g:rooter_patterns = [
       \ 'README.*', 'Makefile', 'stack.yml', 'PKGBUILD', '.envrc', 'cargo.toml',
       \ '.git', '!^etc', 'init.vim', 'config.toml',
-      \ 'build.zig'
       \ ]
+
 "
 " editorconfig
 "
@@ -79,9 +79,9 @@ let g:strip_whitespace_confirm  = 0
 " rainbow
 "
 let g:rainbow_conf = {
-      \  'separately': {
-      \    'nerdtree': 0,
-      \  }
+      \   'separately': {
+      \     'nerdtree': 0,
+      \   }
       \ }
 
 "
@@ -92,12 +92,20 @@ nnoremap <silent> <C-q> :BD<CR>
 "
 " goyo.vim
 "
+let s:scrolloff = &scrolloff
 function! s:goyo_enter()
-  highlight StatusLine ctermfg=red guifg=red cterm=NONE gui=NONE
+  set noshowmode
+  set noshowcmd
+  setlocal scrolloff=999
+  setlocal wrap
 endfunction
 
 function! s:goyo_leave()
   highlight Normal guibg=NONE ctermbg=NONE
+
+  set showmode
+  set showcmd
+  setlocal scrolloff = s:scrolloff
 endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
@@ -105,9 +113,3 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 nnoremap <silent> <Leader>G :Goyo<CR>
 
-"
-" markdown
-"
-" let g:markdown_fenced_languages = [
-"       \ 'fish', 'sh=bash'
-"       \ ]

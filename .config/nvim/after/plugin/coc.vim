@@ -10,7 +10,7 @@ let g:coc_snippet_next = '<TAB>'
 
 " functions
 function! s:show_document()
-  if (index(['vim', 'help'], &filetype) >= 0)
+  if ( index(['vim', 'help'], &filetype) >= 0 )
     exec 'h' expand('<cword>')
   else
     call CocAction('doHover')
@@ -28,6 +28,6 @@ inoremap <silent><expr> <TAB>
       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-nnoremap <silent>K :call <SID>show_document()<CR>
+inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+nnoremap <silent> K :call <SID>show_document()<CR>
 
