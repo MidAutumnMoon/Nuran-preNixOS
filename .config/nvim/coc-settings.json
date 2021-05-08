@@ -9,12 +9,7 @@
 
   "pairs.disableLanguages": [ "scheme" ],
 
-  "languageserver": {
-    "zls": {
-      "command": "zls",
-      "filetypes": [ "zig" ]
-    }
-  }
+  "languageserver": { }
 }
 
 // vim: set ft=jsonc:

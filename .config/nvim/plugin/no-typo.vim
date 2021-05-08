@@ -1,4 +1,4 @@
-" Ideas borrowed from  nicknisi / dotfiles
+" Ideas borrowed from  nicknisi/dotfiles
 
 abbr funciton function
 abbr teh the
