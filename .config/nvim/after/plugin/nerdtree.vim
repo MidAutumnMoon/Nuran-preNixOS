@@ -18,6 +18,9 @@ let s:ignore_list = [
       \ '\.git$[[dir]]',
       \ ]
 
+" hello world
+" nopp
+
 if exists( 'NERDTreeIgnore' )
   let g:NERDTreeIgnore = g:NERDTreeIgnore + s:ignore_list
 else
@@ -51,7 +54,7 @@ augroup nerdtree_auto
 augroup END
 
 " Open NerdTree
-nnoremap <silent><expr> <Leader>n line('$')==1&&getline(1)=='' ? ':NERDTreeFocus<CR>' : ':NERDTreeFind<CR>'
-nnoremap <silent><Leader>N :NERDTreeToggle<CR>
+nnoremap <silent><expr> <Leader>n line('$')==1&&getline(1)=='' ? ':NERDTreeFocus<Bar>wincmd =<CR>' : ':NERDTreeFind<Bar>wincmd =<CR>'
+nnoremap <silent><Leader>N :NERDTreeToggle <Bar> wincmd =<CR>
 " nnoremap <silent><F9> :NERDTreeFind<Bar>:wincmd p<CR>
 

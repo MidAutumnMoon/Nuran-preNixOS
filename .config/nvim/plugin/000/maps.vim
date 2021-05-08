@@ -39,10 +39,9 @@ imap <C-h> <BS>
 tmap <C-h> <BS>
 cmap <C-h> <BS>
 
-" cmap
+" movement in command mode
 cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
-cmap <C-v> <Del>
 
 " move lines in different modes
 nnoremap <silent><C-k> :move-2<CR>
@@ -65,8 +64,9 @@ inoremap <C-^> <C-o><C-^>
 nnoremap <A-CR> <C-^>
 inoremap <A-CR> <C-o><C-^>
 
-" delete one character after cursor in insert mode
+" delete one character after cursor
 imap <C-v> <C-o>x
+cmap <C-v> <Del>
 
 " Yank to end of lin$
 nnoremap Y y$
@@ -80,7 +80,20 @@ nnoremap <silent><Tab> <C-w>w<Bar>:if &ft ==# 'nerdtree'<Bar>wincmd w<Bar>endif<
 nnoremap <silent><S-Tab> <C-w>W<Bar>:if &ft ==# 'nerdtree'<Bar>wincmd W<Bar>endif<CR>
 
 " Open help in new tab
-cabbrev h tab help
+" cabbrev H tab help
+cabbr <expr> h &ft ==# 'help' ? 'help' : 'tab help'
 
+" shorter inside tag block
 omap t it
 
+" the whole line
+vnoremap <silent> al :<C-u>normal! $v0<CR>
+onoremap <silent> al :<C-u>normal! $v0<CR>
+
+" whole line without CR
+xnoremap <silent> il :<C-u>normal! g_v^<CR>
+onoremap <silent> il :<C-u>normal! g_v^<CR>
+
+" scroll the viewport faster
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>

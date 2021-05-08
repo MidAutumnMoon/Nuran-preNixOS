@@ -1,2 +1,2 @@
-let g:enable_spelunker_vim = 0
+let b:enable_spelunker_vim = 0
 

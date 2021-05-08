@@ -46,6 +46,7 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': 'coc#util#install()' }
 Plug 'preservim/tagbar'
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': ['scheme', 'lisp'] }
 Plug 'guns/vim-sexp', { 'for': ['scheme', 'lisp'] }
+Plug 'tpope/vim-abolish'
 
 "==== Code Browsing
 Plug 'Yggdroot/indentLine'
@@ -80,6 +81,7 @@ Plug 'kamykn/spelunker.vim'
 "==== Misc
 Plug 'qpkorr/vim-bufkill'
 Plug 'wellle/targets.vim'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 

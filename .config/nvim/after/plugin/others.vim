@@ -89,3 +89,25 @@ let g:rainbow_conf = {
 "
 nnoremap <silent> <C-q> :BD<CR>
 
+"
+" goyo.vim
+"
+function! s:goyo_enter()
+  highlight StatusLine ctermfg=red guifg=red cterm=NONE gui=NONE
+endfunction
+
+function! s:goyo_leave()
+  highlight Normal guibg=NONE ctermbg=NONE
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+nnoremap <silent> <Leader>G :Goyo<CR>
+
+"
+" markdown
+"
+" let g:markdown_fenced_languages = [
+"       \ 'fish', 'sh=bash'
+"       \ ]
