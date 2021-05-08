@@ -1,3 +1,5 @@
+" Based on https://github.com/lilydjwg/fcitx.vim replacing DBus call with fcitx5-remote.
+
 " There's no fcitx5 for Windows.
 if has('win32') || has('win64')
   finish
