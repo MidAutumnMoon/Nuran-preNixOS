@@ -18,9 +18,6 @@ let s:ignore_list = [
       \ '\.git$[[dir]]',
       \ ]
 
-" hello world
-" nopp
-
 if exists( 'NERDTreeIgnore' )
   let g:NERDTreeIgnore = g:NERDTreeIgnore + s:ignore_list
 else
