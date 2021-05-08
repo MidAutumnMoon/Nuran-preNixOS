@@ -71,17 +71,13 @@ cmap <C-v> <Del>
 " Yank to end of lin$
 nnoremap Y y$
 
-" quit insert mode in a easy way
-imap jk <Esc>
-cmap jk <Esc>
-
 " <tab> to cycle through all splits, with nerdtree ignored
 nnoremap <silent> <Tab> <C-w>w<Bar>:if &ft ==# 'nerdtree'<Bar>wincmd w<Bar>endif<CR>
 nnoremap <silent> <S-Tab> <C-w>W<Bar>:if &ft ==# 'nerdtree'<Bar>wincmd W<Bar>endif<CR>
 
 " Open help in new tab
 " cabbrev H tab help
-cabbr <expr> h &ft ==# 'help' ? 'help' : 'tab help'
+cnoreabbr <expr> h &ft ==# 'help' ? 'help' : 'tab help'
 
 " shorter inside tag block
 omap t it
