@@ -92,7 +92,6 @@ nnoremap <silent> <C-q> :BD<CR>
 "
 " goyo.vim
 "
-let s:scrolloff = &scrolloff
 function! s:goyo_enter()
   set noshowmode
   set noshowcmd
@@ -105,7 +104,7 @@ function! s:goyo_leave()
 
   set showmode
   set showcmd
-  setlocal scrolloff = s:scrolloff
+  setlocal scrolloff=5
 endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
