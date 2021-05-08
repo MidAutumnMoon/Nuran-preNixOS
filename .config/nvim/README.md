@@ -8,8 +8,3 @@ Dotfiles of other people which I borrowed some useful ideas from:
 - https://github.com/nicknisi/dotfiles/
 - https://github.com/thecasualcoder/neovim-dotfiles/
 
-```fish
-function hello
-end
-```
-
