@@ -1,7 +1,7 @@
 set number
 set relativenumber
 
-set autoread
+set autoread autowrite
 set encoding=utf-8
 set shortmess=I
 set lazyredraw
