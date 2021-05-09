@@ -43,7 +43,7 @@ Plug '907th/vim-auto-save'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AndrewRadev/switch.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': 'coc#util#install()' }
-Plug 'preservim/tagbar'
+Plug 'preservim/tagbar', { 'on': 'TagbarToggle' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': ['scheme', 'lisp'] }
 Plug 'guns/vim-sexp', { 'for': ['scheme', 'lisp'] }
 Plug 'tpope/vim-abolish'
