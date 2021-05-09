@@ -35,8 +35,8 @@ nmap gcc <Plug>CommentaryLine
 "
 let g:splitjoin_split_mapping = ''
 let g:splitjoin_join_mapping = ''
-nnoremap <silent> gss :SplitjoinSplit<cr>
-nnoremap <silent> gsj :SplitjoinJoin<cr>
+nnoremap <silent> gS :SplitjoinSplit<CR>
+nnoremap <silent> gJ :SplitjoinJoin<CR>
 
 "
 " switch.vim
