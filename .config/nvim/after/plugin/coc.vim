@@ -5,8 +5,9 @@ let g:coc_global_extensions = [
       \ 'coc-pairs', 'coc-snippets', 'coc-solargraph',
       \ ]
 
-" coc-snippets
 let g:coc_snippet_next = '<TAB>'
+
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " functions
 function! s:show_document()
@@ -29,5 +30,11 @@ inoremap <silent><expr> <TAB>
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
 nnoremap <silent> K :call <SID>show_document()<CR>
+
+nmap <silent> <Leader>gd <Plug>(coc-definition)
+nmap <silent> <Leader>gy <Plug>(coc-type-definition)
+nmap <silent> <Leader>gi <Plug>(coc-implementation)
+nmap <silent> <Leader>gr <Plug>(coc-references)
 

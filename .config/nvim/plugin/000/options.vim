@@ -3,7 +3,7 @@ set relativenumber
 
 set autoread autowrite
 set encoding=utf-8
-set shortmess=I
+set shortmess+=IF
 set lazyredraw
 set modelines=3
 set mouse=a
