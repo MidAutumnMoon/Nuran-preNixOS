@@ -2,11 +2,7 @@
 " Plugins save the world.
 "
 
-if has( 'nvim' )
-  call plug#begin( stdpath('data') . '/plugged' )
-else
-  call plug#begin( $HOME . "/.local/share/vim/plugged" )
-endif
+call plug#begin( stdpath('data') . '/plugged' )
 
 "==== Git tools
 Plug 'rhysd/git-messenger.vim'

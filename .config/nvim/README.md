@@ -1,4 +1,4 @@
-# Neovim (and probably usable in Vim) configs
+# MidAutumnMoon's Neovim
 
 Big thanks to `junegunn`'s [dotfiles](https://github.com/junegunn/dotfiles/) which gave me a usable Vim when I started.
 
