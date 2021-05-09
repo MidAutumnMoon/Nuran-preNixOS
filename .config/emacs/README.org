@@ -3,4 +3,4 @@
 
 * MidAutumnMoon's Emacs Configuration
 
-* TODO Do something.
+Happy with Neovim by now.
