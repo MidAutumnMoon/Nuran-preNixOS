@@ -71,4 +71,4 @@ shell  = [ 'sh', '--norc', '--noprofile', '--noediting', '--init-file', '/dev/nu
 
 [custom.vimrc]
 format = "[Vimrc ]($style)"
-files  = [ '.nvimrc', 'vimrc', 'exrc' ]
+files  = [ '.nvimrc', 'vimrc', '_vimrc', '.exrc', '_exrc' ]
