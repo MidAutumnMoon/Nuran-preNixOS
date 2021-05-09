@@ -30,6 +30,7 @@ set tabstop=2
 set completeopt=menuone,preview
 set cursorline
 set diffopt=filler,vertical
+let &fcs = 'eob: '
 set hidden
 set hlsearch incsearch
 set ignorecase smartcase
