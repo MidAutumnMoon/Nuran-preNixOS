@@ -14,6 +14,8 @@ if status is-interactive
     rbenv init - | source
   end
 
+  prompt_bottom
+
   command direnv hook fish | source
   command starship init fish | source
   command zoxide init fish | source
