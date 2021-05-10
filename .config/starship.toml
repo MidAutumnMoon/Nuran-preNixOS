@@ -2,8 +2,9 @@
 scan_timeout = 10
 
 format = """
-${custom.vimrc}${custom.nixos}${custom.chez}$nix_shell$username$directory$git_branch$git_commit$git_state$git_status$cmd_duration
-$jobs$character"""
+${custom.vimrc}${custom.chez}$username$directory$git_branch$git_commit$git_state$git_status$cmd_duration
+$jobs$character
+"""
 
 [character]
 success_symbol = '[](bold blue)'

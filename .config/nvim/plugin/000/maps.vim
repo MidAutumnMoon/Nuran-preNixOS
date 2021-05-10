@@ -105,7 +105,7 @@ nnoremap <S-Up>    6<C-w>-
 nnoremap <S-Down>  6<C-w>+
 
 " switch the case of current word
-nnoremap <silent> <C-U> mzg~iw`z
+nnoremap <silent> <C-u> mzg~iw`z
 
 " starts fish in terminal
 command! T terminal fish

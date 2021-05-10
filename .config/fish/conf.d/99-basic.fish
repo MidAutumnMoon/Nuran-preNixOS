@@ -6,6 +6,8 @@ if status is-login
 
   set -xU fish_prompt_pwd_dir_length 0
   set -xU fish_greeting ''
+
+  set -xU MOZ_X11_EGL 1
 end
 
 if status is-interactive

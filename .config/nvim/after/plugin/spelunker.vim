@@ -23,7 +23,7 @@ let s:list += [
 
 let g:spelunker_white_list_for_user = s:list
 
-let g:spelunker_check_type             = 2
+let g:spelunker_check_type             = 1
 let g:spelunker_disable_email_checking = 1
 let g:spelunker_disable_uri_checking   = 1
 let g:spelunker_target_min_char_len    = 3
