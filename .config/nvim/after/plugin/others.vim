@@ -41,7 +41,7 @@ nnoremap <silent> gJ :SplitjoinJoin<CR>
 "
 " switch.vim
 "
-let g:switch_mapping = '_'
+nnoremap _ :Switch<CR>
 let g:switch_custom_definitions = [
       \   ['MON', 'TUE', 'WED', 'THU', 'FRI'],
       \   ['def', 'define']
