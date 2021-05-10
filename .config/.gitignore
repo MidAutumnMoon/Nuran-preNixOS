@@ -15,7 +15,7 @@
 !ppsspp/
 !systemd/
 
-!chrome-dev-flags.conf
+!chromium-dev-flags.conf
 !pikaur.conf
 !starship.toml
 
