@@ -13,6 +13,7 @@
 !nvim/
 !picom/
 !ppsspp/
+!rubocop/
 !systemd/
 
 !chromium-dev-flags.conf

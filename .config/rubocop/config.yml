@@ -1,0 +1,5 @@
+Layout/SpaceInsideParens:
+  Enabled: false
+
+Layout/TrailingEmptyLines:
+  Enabled: false
