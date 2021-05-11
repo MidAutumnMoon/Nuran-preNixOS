@@ -43,7 +43,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'farmergreg/vim-lastplace'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'junegunn/vim-slash'
-  noremap <expr> <plug>(slash-after) slash#blink(2, 50)
+  noremap <expr> <Plug>(slash-after) slash#blink(2, 50)
 Plug 'luochen1990/rainbow'
   let g:rainbow_active = 1
 Plug 'preservim/nerdtree'

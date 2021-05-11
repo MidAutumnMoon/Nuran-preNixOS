@@ -3,7 +3,7 @@
 "
 
 let g:NERDTreeAutoDeleteBuffer      = 1
-let g:NERDTreeBookmarksFile         = $HOME . "/.cache/NERDTreeBookmarks"
+let g:NERDTreeBookmarksFile         = stdpath('cache') . '/nerdtree/bookmarks'
 let g:NERDTreeCascadeSingleChildDir = 0
 let g:NERDTreeChDirMode             = 1
 let g:NERDTreeMinimalUI             = 1
