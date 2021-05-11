@@ -32,7 +32,7 @@ nnoremap <silent> <Leader>t :tabedit<CR>
 nnoremap <silent> <Leader>T :tabc<CR>
 
 " shebang abbreviation
-inoreabbrev #!! "#!/usr/bin/env "
+inoreabbrev #!! #!/usr/bin/env
 
 " backspace as <C-h>
 imap <C-h> <BS>
