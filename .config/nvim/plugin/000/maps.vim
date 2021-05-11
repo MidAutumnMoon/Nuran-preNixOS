@@ -65,7 +65,7 @@ nnoremap <A-CR> <C-^>
 inoremap <A-CR> <C-o><C-^>
 
 " delete one character after cursor
-imap <C-v> <C-o>x
+imap <C-v> <Del>
 cmap <C-v> <Del>
 
 " Yank to end of lin$
