@@ -21,3 +21,20 @@
 .tab-content {
   overflow: hidden !important;
 }
+
+/* Hide these useless right-click menu item */
+#context-inspect-a11y {
+  display: none !important;
+}
+
+#context-navigation {
+  display: none !important;
+}
+
+#context-sendimage, #context-sendvideo, #context-sendaudio {
+  display: none !important;
+}
+
+#context-navigation + #context-sep-navigation {
+  display: none !important;
+}
