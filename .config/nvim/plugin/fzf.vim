@@ -26,17 +26,17 @@ let g:fzf_colors = {
 autocmd! FileType fzf
 autocmd  FileType fzf set noshowmode noruler nonu
 
-nnoremap <silent> <expr> <Leader>f (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
+nnoremap <silent><expr> <Leader>f (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
 nnoremap <silent> <Leader><Enter>  :Buffers<CR>
 nnoremap <silent> <Leader>L        :Lines<CR>
 nnoremap <silent> <Leader>ag       :Ag <C-R><C-W><CR>
 xnoremap <silent> <Leader>ag       y:Ag <C-R>"<CR>
 
-imap <c-x><c-k> <plug>(fzf-complete-word)
-imap <c-x><c-f> <plug>(fzf-complete-path)
-inoremap <expr> <c-x><c-d> fzf#vim#complete#path('blsd')
-imap <c-x><c-j> <plug>(fzf-complete-file-ag)
-imap <c-x><c-l> <plug>(fzf-complete-line)
+imap <C-x><C-k> <Plug>(fzf-complete-word)
+imap <C-x><C-f> <Plug>(fzf-complete-path)
+inoremap <expr> <C-x><C-d> fzf#vim#complete#path('blsd')
+imap <C-x><C-j> <Plug>(fzf-complete-file-ag)
+imap <C-x><C-l> <Plug>(fzf-complete-line)
 
 nnoremap <F4> :Filetypes<CR>
 
@@ -44,9 +44,9 @@ function! RipgrepFzf(query, fullscreen)
   let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case %s || true'
   let initial_command = printf(command_fmt, shellescape(a:query))
   let reload_command = printf(command_fmt, '{q}')
-  let options = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
+  let options = { 'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command] }
   let options = fzf#vim#with_preview(options, 'right', 'ctrl-/')
-  call fzf#vim#grep(initial_command, 1, options, a:fullscreen)
+  call fzf#vim#grep( initial_command, 1, options, a:fullscreen )
 endfunction
 
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
