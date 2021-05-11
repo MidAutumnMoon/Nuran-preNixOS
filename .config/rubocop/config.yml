@@ -3,3 +3,12 @@ Layout/SpaceInsideParens:
 
 Layout/TrailingEmptyLines:
   Enabled: false
+
+Style/NegatedIf:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/EmptyLines:
+  Enabled: false
