@@ -1,2 +1,2 @@
-autocmd BufRead,BufNewFile .npmignore,npmignore set filetype=gitignore 
+autocmd BufRead,BufNewFile .npmignore,npmignore set filetype=gitignore
 

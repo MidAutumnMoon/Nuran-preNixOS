@@ -4,13 +4,13 @@
 !README.md
 
 !/.config/
-!/.etc/
 !/.local/
 
 !/.mozilla/
 !/.snow/
 !/.ssh/
 
+!/.bashrc
 !/.makepkg.conf
 !/.pam_environment
 !/.taskrc

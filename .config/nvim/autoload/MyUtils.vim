@@ -1,3 +1,8 @@
+function! MyUtils#ErrorEcho( ... )
+  return
+endfunction
+
+" Let's nyan!
 function! MyUtils#NyanCat( ... )
   if ! has( 'nvim' )
     echohl ErrorMsg
