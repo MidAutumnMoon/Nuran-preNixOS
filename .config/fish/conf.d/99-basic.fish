@@ -25,6 +25,6 @@ if status is-interactive
   set -xg pcmn_pacman_command pikaur
 
   # Opha the MidAutumnMoon's toolbox
-  set -xp fish_function_path "$__fish_config_dir/opah"
+  set -xa fish_function_path "$__fish_config_dir/opah"
 end
 

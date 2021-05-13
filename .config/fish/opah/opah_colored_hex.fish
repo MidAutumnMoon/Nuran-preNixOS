@@ -32,7 +32,13 @@ function opah_colored_hex
   set -lx color_g (printf "%d" 0x(string sub --start=3 --end=4 $hex))
   set -lx color_b (printf "%d" 0x(string sub --start=5 --end=6 $hex))
 
-  echo -n "\e[38;2;$color_r;$color_g;$color_b"m(string collect $string)"\e[0m"
+  set -lx formatted "\e[38;2;$color_r;$color_g;$color_b"m(string collect $string)"\e[0m"
+
+  if isatty stdout
+    echo -ne $formatted
+  else
+    echo -n $formatted
+  end
 
   #
   # Cleanup
