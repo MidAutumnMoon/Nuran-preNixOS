@@ -3,6 +3,7 @@
 "
 
 let mapleader = " "
+let maplocalleader = "\\"
 
 runtime! startup/plugins.vim
 
@@ -10,3 +11,4 @@ runtime! startup/plugins.vim
 " TODO: Create an alternate method.
 set exrc
 set secure
+

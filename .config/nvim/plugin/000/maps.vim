@@ -17,8 +17,8 @@ nmap \ $
 omap \ $
 xmap \ $
 
-" ',' is easier to reach
-nmap , %
+" <M-q> is easier to reach
+nmap <M-q> %
 
 " switch buffers
 nnoremap <silent> ]b :bnext<CR>
