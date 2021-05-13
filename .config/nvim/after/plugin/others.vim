@@ -44,7 +44,6 @@ nnoremap <silent> gJ :SplitjoinJoin<CR>
 nnoremap _ :Switch<CR>
 let g:switch_custom_definitions = [
       \   ['MON', 'TUE', 'WED', 'THU', 'FRI'],
-      \   ['def', 'define']
       \ ]
 
 "

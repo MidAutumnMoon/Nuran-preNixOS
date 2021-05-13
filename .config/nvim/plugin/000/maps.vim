@@ -109,3 +109,4 @@ nnoremap <silent> <C-u> mzg~iw`z
 
 " starts fish in terminal
 command! T terminal fish
+
