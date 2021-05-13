@@ -13,7 +13,7 @@ end
 if status is-interactive
   # Only have rbenv on my main machine
   if test $hostname = "moon"
-    rbenv init - | source
+    command rbenv init - | source
   end
 
   prompt_bottom
@@ -23,5 +23,8 @@ if status is-interactive
   command zoxide init fish | source
 
   set -xg pcmn_pacman_command pikaur
+
+  # Opha the MidAutumnMoon's toolbox
+  set -xp fish_function_path "$__fish_config_dir/opah"
 end
 
