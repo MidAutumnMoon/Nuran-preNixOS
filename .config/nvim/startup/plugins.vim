@@ -37,6 +37,7 @@ Plug 'preservim/tagbar', { 'on': 'TagbarToggle' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': ['scheme', 'lisp'] }
 Plug 'guns/vim-sexp', { 'for': ['scheme', 'lisp'] }
 Plug 'tpope/vim-abolish'
+Plug 'tommcdo/vim-exchange'
 
 "==== Code Browsing
 Plug 'Yggdroot/indentLine'
