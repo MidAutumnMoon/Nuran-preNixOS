@@ -20,11 +20,13 @@ function opah_colored_hex
   end
 
   set -lx hex $argv[1]
-  set -lx string $argv[2..-1]
+  set -lx string (string collect $argv[2..-1])
 
   valid_hex $hex;
     or begin
       echo -n (string collect $string)
+
+      functions --erase valid_hex
       return 1
     end
 
@@ -32,13 +34,12 @@ function opah_colored_hex
   set -lx color_g (printf "%d" 0x(string sub --start=3 --end=4 $hex))
   set -lx color_b (printf "%d" 0x(string sub --start=5 --end=6 $hex))
 
-  set -lx formatted "\e[38;2;$color_r;$color_g;$color_b"m(string collect $string)"\e[0m"
+  set -lx formatted "\e[38;2;$color_r;$color_g;$color_b"m$string"\e[0m"
 
-  if isatty stdout
-    echo -ne $formatted
-  else
-    echo -n $formatted
-  end
+  isatty stdout;
+    and set -lx tty_interpret 'e'
+
+  echo -n$tty_interpret $formatted
 
   #
   # Cleanup

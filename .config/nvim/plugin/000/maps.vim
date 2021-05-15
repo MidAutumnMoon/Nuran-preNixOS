@@ -8,6 +8,7 @@ nnoremap <Leader>O O<ESC>
 
 " quit vim
 nnoremap <Leader>q :qa<CR>
+nnoremap <LocalLeader>q :qa!<CR>
 
 " select all lines
 nnoremap <Leader>A ggVG
