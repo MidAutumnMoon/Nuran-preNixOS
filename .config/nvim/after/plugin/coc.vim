@@ -2,7 +2,7 @@
 let g:coc_global_extensions = [
       \ 'coc-json', 'coc-yaml', 'coc-pyright', 'coc-lua',
       \ 'coc-rust-analyzer', 'coc-vimlsp', 'coc-clangd',
-      \ 'coc-pairs', 'coc-snippets', 'coc-solargraph',
+      \ 'coc-pairs', 'coc-snippets', 'coc-solargraph', 'coc-julia'
       \ ]
 
 let g:coc_snippet_next = '<TAB>'

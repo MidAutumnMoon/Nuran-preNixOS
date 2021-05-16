@@ -16,6 +16,7 @@ Plug 'drewtempelmeyer/palenight.vim'
 
 "==== Navigating
 Plug 'easymotion/vim-easymotion'
+Plug 'justinmk/vim-sneak'
 Plug 'andymass/vim-matchup'
   let g:matchup_surround_enabled = 1
 
@@ -60,6 +61,8 @@ Plug 'cespare/vim-toml', { 'for': 'toml' }
 Plug 'vmchale/ats-vim', { 'for': 'ats' }
 Plug 'blankname/vim-fish', { 'for': 'fish' }
 Plug 'gisphm/vim-gitignore', { 'for': 'gitignore' }
+Plug 'JuliaEditorSupport/julia-vim', { 'for': 'julia' }
+  let g:latex_to_unicode_tab = 0
 
 "==== Linting
 Plug 'dense-analysis/ale'

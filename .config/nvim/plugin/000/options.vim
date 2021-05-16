@@ -48,6 +48,5 @@ set backspace=indent,eol,start
 set nrformats=hex,octal
 
 let &backupdir = stdpath('cache').'/backup//,' . '.,' . '/tmp/vim/backup//'
-let &directory = stdpath('cache').'/swap//,' . '.,' . '/tmp/vim/swap//'
 
 filetype plugin on

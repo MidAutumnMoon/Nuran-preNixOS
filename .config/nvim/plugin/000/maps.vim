@@ -7,8 +7,8 @@ nnoremap <Leader>o o<ESC>
 nnoremap <Leader>O O<ESC>
 
 " quit vim
-nnoremap <Leader>q :qa<CR>
-nnoremap <LocalLeader>q :qa!<CR>
+nnoremap <silent> <Leader>q :update<Bar>qa<CR>
+nnoremap <silent> <LocalLeader>q :qa!<CR>
 
 " select all lines
 nnoremap <Leader>A ggVG
@@ -26,8 +26,8 @@ nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [b :bprev<CR>
 
 " switch tabs
+nnoremap <silent> Q <C-w>g<Tab>
 nnoremap <silent> ]q :tabn<CR>
-nnoremap <silent> Q :tabn<CR>
 nnoremap <silent> [q :tabp<CR>
 nnoremap <silent> <Leader>t :tabedit<CR>
 nnoremap <silent> <Leader>T :tabc<CR>
@@ -94,12 +94,6 @@ onoremap <silent> il :<C-u>normal! g_v^<CR>
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
-" make reszing windows easier
-nnoremap <Left>  <C-w><
-nnoremap <Right> <C-w>>
-nnoremap <Up>    <C-w>-
-nnoremap <Down>  <C-w>+
-
 nnoremap <S-Left>  6<C-w><
 nnoremap <S-Right> 6<C-w>>
 nnoremap <S-Up>    6<C-w>-
@@ -108,6 +102,17 @@ nnoremap <S-Down>  6<C-w>+
 " switch the case of current word
 nnoremap <silent> <C-u> mzg~iw`z
 
-" starts fish in terminal
+" starts terminal with fish
 command! T terminal fish
 
+" exit terminal mode
+tnoremap <expr> <ESC> &ft ==# 'fzf' ? '<ESC>' : '<C-\><C-n>'
+
+" switch to tab N
+nnoremap <silent> <Leader>1 1gt
+nnoremap <silent> <Leader>2 2gt
+nnoremap <silent> <Leader>3 3gt
+nnoremap <silent> <Leader>4 4gt
+nnoremap <silent> <Leader>8 5gt
+nnoremap <silent> <Leader>9 6gt
+nnoremap <silent> <Leader>0 7gt
