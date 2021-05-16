@@ -3,7 +3,7 @@
 "
 
 let mapleader = " "
-let maplocalleader = "\\"
+let maplocalleader = "\<F12>"
 
 runtime! startup/plugins.vim
 
