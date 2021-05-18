@@ -82,14 +82,6 @@ cnoreabbr <expr> h &ft ==# 'help' ? 'help' : 'tab help'
 " shorter inside tag block
 omap t it
 
-" the whole line
-vnoremap <silent> al :<C-u>normal! $v0<CR>
-onoremap <silent> al :<C-u>normal! $v0<CR>
-
-" whole line without CR
-xnoremap <silent> il :<C-u>normal! g_v^<CR>
-onoremap <silent> il :<C-u>normal! g_v^<CR>
-
 " scroll the viewport faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
