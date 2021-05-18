@@ -37,9 +37,9 @@ function opah_colored_hex
   set -lx formatted "\e[38;2;$color_r;$color_g;$color_b"m$string"\e[0m"
 
   isatty stdout;
-    and set -lx tty_interpret 'e'
+    and set -lx tty_interpreted 'e'
 
-  echo -n$tty_interpret $formatted
+  echo -n$tty_interpreted $formatted
 
   #
   # Cleanup

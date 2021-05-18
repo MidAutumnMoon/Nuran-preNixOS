@@ -22,9 +22,7 @@ if status is-interactive
   command starship init fish | source
   command zoxide init fish | source
 
-  set -xg pcmn_pacman_command pikaur
-
   # Opha the MidAutumnMoon's toolbox
-  set -xa fish_function_path "$__fish_config_dir/opah"
+  set -aU fish_function_path "$__fish_config_dir/opah"
 end
 
