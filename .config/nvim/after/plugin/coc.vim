@@ -38,4 +38,4 @@ nmap <silent> <Leader>gy <Plug>(coc-type-definition)
 nmap <silent> <Leader>gi <Plug>(coc-implementation)
 nmap <silent> <Leader>gr <Plug>(coc-references)
 
-nmap <silent> <Leader>re <Plug>(coc-rename)
+nmap <silent> <F2> <Plug>(coc-rename)

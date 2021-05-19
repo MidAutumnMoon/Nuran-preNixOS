@@ -86,11 +86,6 @@ omap t it
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
-nnoremap <S-Left>  6<C-w><
-nnoremap <S-Right> 6<C-w>>
-nnoremap <S-Up>    6<C-w>-
-nnoremap <S-Down>  6<C-w>+
-
 " switch the case of current word
 nnoremap <silent> <C-u> mzg~iw`z
 
