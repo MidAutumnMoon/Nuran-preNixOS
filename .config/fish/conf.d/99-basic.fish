@@ -21,8 +21,5 @@ if status is-interactive
   command direnv hook fish | source
   command starship init fish | source
   command zoxide init fish | source
-
-  # Opha the MidAutumnMoon's toolbox
-  set -aU fish_function_path "$__fish_config_dir/opah"
 end
 
