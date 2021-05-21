@@ -23,18 +23,11 @@
 }
 
 /* Hide these useless right-click menu item */
-#context-inspect-a11y {
-  display: none !important;
-}
+#context-inspect-a11y { display: none !important; }
+#context-navigation { display: none !important; }
+#context-sendimage, #context-sendvideo, #context-sendaudio { display: none !important; }
+#context-bookmarklink { display: none !important; }
+#context-navigation + #context-sep-navigation { display: none !important; }
 
-#context-navigation {
-  display: none !important;
-}
-
-#context-sendimage, #context-sendvideo, #context-sendaudio {
-  display: none !important;
-}
-
-#context-navigation + #context-sep-navigation {
-  display: none !important;
-}
+/* Update available but you will never know */
+#appMenu-notification-popup { display: none !important; }
