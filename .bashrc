@@ -6,13 +6,16 @@ initialize_keybindings() {
   return 1
 }
 
+initialize_env() {
+  export SYSTEMD_EDITOR='nvim'
+}
 
 
 #
 # Main
 #
 initialize_keybindings
-
+initialize_env
 
 
 #
