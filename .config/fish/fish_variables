@@ -7,6 +7,9 @@ SETUVAR FZF_LEGACY_KEYBINDINGS:1
 SETUVAR FZF_PREVIEW_DIR_CMD:ls
 SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR FZF_TMUX_HEIGHT:40\x25
+SETUVAR --export GOOGLE_API_KEY:AIzaSyCuDU3tkkELSrXTEKbhBG\x2d8fFOU76RVIbY
+SETUVAR --export GOOGLE_DEFAULT_CLIENT_ID:737742434020\x2dml7ols8v1j6idsmvqf3jsjshpph0hfol\x2eapps\x2egoogleusercontent\x2ecom
+SETUVAR --export GOOGLE_DEFAULT_CLIENT_SECRET:FoZcT6aXf2woRqA40_RD75qH
 SETUVAR --export LESS_TERMCAP_md:\x1b\x5b38\x3b5\x3b170m
 SETUVAR --export LESS_TERMCAP_me:\x1b\x5b0m
 SETUVAR --export LESS_TERMCAP_se:\x1b\x5b0m
@@ -14,6 +17,7 @@ SETUVAR --export LESS_TERMCAP_so:\x1b\x5b38\x3b5\x3b180m
 SETUVAR --export LESS_TERMCAP_ue:\x1b\x5b0m
 SETUVAR --export LESS_TERMCAP_us:\x1b\x5b38\x3b5\x3b39m
 SETUVAR --export MOZ_X11_EGL:1
+SETUVAR --export SYSTEMD_EDITOR:nvim
 SETUVAR __fish_initialized:3100
 SETUVAR __git_plugin_abbreviations:g\x1ega\x1egaa\x1egapa\x1egap\x1egb\x1egba\x1egban\x1egbd\x1egbD\x1egbl\x1egbs\x1egbsb\x1egbsg\x1egbsr\x1egbss\x1egc\x1egc\x21\x1egcn\x21\x1egca\x1egca\x21\x1egcan\x21\x1egcv\x1egcav\x1egcav\x21\x1egcm\x1egcam\x1egscam\x1egcfx\x1egcf\x1egcl\x1egclean\x1egclean\x21\x1egclean\x21\x21\x1egcount\x1egcp\x1egcpa\x1egcpc\x1egd\x1egdca\x1egds\x1egdsc\x1egdw\x1egdwc\x1egdto\x1egignore\x1egf\x1egfa\x1egfm\x1egfo\x1egl\x1egll\x1eglr\x1eglg\x1eglgg\x1eglgga\x1eglo\x1eglog\x1eglom\x1eglod\x1egloo\x1egm\x1egmt\x1egp\x1egp\x21\x1egpo\x1egpo\x21\x1egpv\x1egpv\x21\x1eggp\x21\x1egpu\x1egr\x1egra\x1egrb\x1egrba\x1egrbc\x1egrbi\x1egrbm\x1egrbmi\x1egrbmia\x1egrbd\x1egrbdi\x1egrbdia\x1egrbs\x1egrev\x1egrh\x1egrhh\x1egrhpa\x1egrm\x1egrmc\x1egrmv\x1egrrm\x1egrs\x1egrset\x1egrss\x1egrup\x1egrv\x1egsh\x1egsd\x1egsr\x1egss\x1egst\x1egsta\x1egstd\x1egstp\x1egsts\x1egsu\x1egsur\x1egsuri\x1egts\x1egtv\x1egsw\x1egswc\x1egunignore\x1egup\x1egwch\x1egco\x1egcb\x1egcod\x1egcom\x1egfb\x1egff\x1egfr\x1egfh\x1egfs\x1egfbs\x1egffs\x1egfrs\x1egfhs\x1egfss\x1egfbt\x1egfft\x1egfrt\x1egfht\x1egfst\x1egfp
 SETUVAR __git_plugin_initialized:Thu\x20May\x2013\x2004\x3a37\x3a30\x20PM\x20CST\x202021
