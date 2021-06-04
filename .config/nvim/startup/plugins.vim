@@ -61,6 +61,7 @@ Plug 'cespare/vim-toml', { 'for': 'toml' }
 Plug 'vmchale/ats-vim', { 'for': 'ats' }
 Plug 'blankname/vim-fish', { 'for': 'fish' }
 Plug 'gisphm/vim-gitignore', { 'for': 'gitignore' }
+Plug 'chr4/nginx.vim', { 'for': 'nginx' }
 
 "==== Linting
 Plug 'dense-analysis/ale'

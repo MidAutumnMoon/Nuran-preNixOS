@@ -3,13 +3,11 @@
 
   "coc.preferences.diagnostic.displayByAle": true,
 
-  "markdownlint.config": {
-    "line_length": false
-  },
+  "markdownlint.config": { "line_length": false },
+
+  "rust-analyzer.server.path": "/usr/bin/rust-analyzer",
 
   "pairs.disableLanguages": [ "scheme" ],
-
-  "languageserver": { }
 }
 
 // vim: set ft=jsonc:
