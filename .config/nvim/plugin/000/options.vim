@@ -19,6 +19,7 @@ set autoindent
 set breakindent
 set breakindentopt=sbr
 set expandtab smarttab
+set foldopen-=block
 set foldlevelstart=99
 set formatoptions+=1,j
 set nojoinspaces
