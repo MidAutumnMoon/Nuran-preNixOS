@@ -106,4 +106,4 @@ nnoremap <silent> <Leader>0 7gt
 
 " toggle folds - one keystroke is better than two
 nnoremap <M-f> za
-inoremao <M-f> <C-o>za
+inoremap <M-f> <C-o>za
