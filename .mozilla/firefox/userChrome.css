@@ -7,12 +7,9 @@
   display: none !important;
 }
 
-/* Only display close button on hover */
+/* Do not display close button. Use middle click instead. */
 .tabbrowser-tab .tab-close-button {
   display: none !important;
-}
-.tabbrowser-tab:not([pinned]):hover .tab-close-button {
-  display: inherit !important;
 }
 
 .tabbrowser-tab {
@@ -22,17 +19,46 @@
   overflow: hidden !important;
 }
 
-/* Hide these useless right-click menu item */
-#context-inspect-a11y { display: none !important; }
-#context-navigation { display: none !important; }
-#context-sendimage, #context-sendvideo, #context-sendaudio { display: none !important; }
-#context-bookmarklink { display: none !important; }
-#context-navigation + #context-sep-navigation { display: none !important; }
 
-/* Update available but you will never know */
+/*
+ * Hide these useless right-click menu item
+ */
+#context-inspect-a11y {
+  display: none !important;
+}
+
+#context-navigation {
+  display: none !important;
+}
+#context-sep-navigation {
+  display: none !important;
+}
+
+#context-sendimage, #context-sendvideo, #context-sendaudio {
+  display: none !important;
+}
+
+#context-bookmarklink {
+  display: none !important;
+}
+
+#context-take-screenshot {
+  display: none !important;
+}
+#context-sep-screenshots {
+  display: none !important;
+}
+
+
+/*
+ * Update available but you will never know
+ */
 #appMenu-notification-popup { display: none !important; }
 
-/* Smaller tabbar */
+
+/*
+ * Smaller tabbar
+ */
 :root {
   --tab-toolbar-navbar-overlap: 0px !important;
   --tab-min-height: 25px !important;
@@ -45,3 +71,13 @@
 #TabsToolbar {
   height: var( --tab-min-height ) !important;
 }
+
+
+/*
+ * Force the reader mode button to show
+ */
+#reader-mode-button {
+    display: -moz-box !important;
+    visibility: visible !important;
+}
+
